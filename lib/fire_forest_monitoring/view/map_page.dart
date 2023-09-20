@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:fire_forest_monitoring_system/components/bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
@@ -49,7 +50,10 @@ class _MapPageState extends State<MapPage> {
         label: const Text('To the lake!'),
         icon: const Icon(Icons.directions_boat),
       ),
-    );
+      bottomNavigationBar: const BottomNav(
+
+      ),
+      );
   }
 
   Future<void> _goToTheLake() async {
