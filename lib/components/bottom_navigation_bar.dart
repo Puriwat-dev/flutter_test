@@ -26,22 +26,23 @@ class BottomNavState extends State<BottomNav> {
           selectedIcon: Icon(Icons.map, color: Color(0xff2B91BD)),
           icon: Icon(
             Icons.map,
+            color: Color(0xff606060)
           ),
           label: 'Map',
         ),
         NavigationDestination(
           selectedIcon: Icon(Icons.warning, color: Color(0xff2B91BD)),
-          icon: Icon(Icons.warning),
+          icon: Icon(Icons.warning, color: Color(0xff606060)),
           label: 'Report',
         ),
         NavigationDestination(
           selectedIcon: Icon(Icons.notifications, color: Color(0xff2B91BD)),
-          icon: Icon(Icons.notifications),
+          icon: Icon(Icons.notifications, color: Color(0xff606060)),
           label: 'Notifications',
         ),
         NavigationDestination(
           selectedIcon: Icon(Icons.settings, color: Color(0xff2B91BD)),
-          icon: Icon(Icons.settings),
+          icon: Icon(Icons.settings, color: Color(0xff606060)),
           label: 'Setting',
         ),
       ],
