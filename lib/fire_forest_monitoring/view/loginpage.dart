@@ -68,7 +68,7 @@ class LoginForm extends StatelessWidget {
               child: Column(
                 children: [
                   const Padding(
-                    padding: EdgeInsetsDirectional.only(top: 20),
+                    padding: EdgeInsetsDirectional.only(top: 20, end: 100),
                     child: Text(
                       'Sign In',
                       style: TextStyle(
@@ -120,24 +120,35 @@ class LoginForm extends StatelessWidget {
                               ),
                             )
                           ]))),
-                  Padding(
-                      padding: EdgeInsetsDirectional.only(top: 20),
-                      child: SizedBox(
-                          width: 300,
-                          height: 50,
-                          child: FilledButton(
-                              onPressed: null,
-                              style: ButtonStyle(
-                                  backgroundColor: MaterialStatePropertyAll(
-                                      Color(0xffEF5350))),
-                              child: Text(
-                                "Send",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 20),
-                              )))),
+                  const SendButton(),
                 ],
               ))),
     );
+  }
+}
+
+class SendButton extends StatelessWidget {
+  const SendButton({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return const Padding(
+        padding: EdgeInsetsDirectional.only(top: 20),
+        child: SizedBox(
+            width: 300,
+            height: 50,
+            child: FilledButton(
+                onPressed: null,
+                style: ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll(
+                        Color(0xffEF5350))),
+                child: Text(
+                  "Send",
+                  style: TextStyle(
+                      color: Colors.white, fontSize: 20),
+                ))));
   }
 }
 
@@ -188,15 +199,5 @@ class SwitchAccountWidget extends StatelessWidget {
         child: SwitchAccount(),
       ),
     );
-  }
-}
-
-class Body extends StatelessWidget {
-  const Body({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    // Size size = MediaQuery.of(context);
-    return const Placeholder();
   }
 }

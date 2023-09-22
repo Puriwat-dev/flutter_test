@@ -1,5 +1,7 @@
 import 'package:fire_forest_monitoring_system/fire_forest_monitoring/view/map_page.dart';
 import 'package:fire_forest_monitoring_system/fire_forest_monitoring/view/loginpage.dart';
+import 'package:fire_forest_monitoring_system/fire_forest_monitoring/view/otp_page.dart';
+
 import 'package:flutter/material.dart';
 
 class MainApp extends StatelessWidget {
@@ -11,7 +13,7 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       restorationScopeId: 'app',
       title: 'Gistda',
-      home: const LoginPage(),
+      home: const OtpPage(),
       theme: ThemeData(
           primaryColor: const Color(0xFFEF5350),
           scaffoldBackgroundColor: Colors.white),
